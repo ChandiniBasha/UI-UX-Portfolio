@@ -48,7 +48,6 @@ skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills);
 });
 
-
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
 tabContents = document.querySelectorAll('[data-content]')
@@ -130,7 +129,8 @@ window.addEventListener('scroll', scrollActive)
 function scrollHeader(){
     const nav = document.getElementById('header')
     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+    if(this.scrollY >= 80) nav.classList.add('scroll-header'); 
+    else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
@@ -138,7 +138,8 @@ window.addEventListener('scroll', scrollHeader)
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); 
+    else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
